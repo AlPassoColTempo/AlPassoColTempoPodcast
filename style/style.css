@@ -1,0 +1,109 @@
+@keyframes background {
+    from {background-color: rgb(70, 54, 70);}
+    to {background-color:  #34282C;}
+}
+  
+  
+body {
+    animation-name: background;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+.sus {
+    margin-left: 600px;
+    margin-top: 100px;
+    font-family: 'Rubik Vinyl', cursive;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.pass {
+    margin-left: 980px;
+    font-family: 'Rubik Vinyl', cursive;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.cont {
+    font-family: 'Rubik Vinyl', cursive;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
+    width: fit-content;
+    margin-left: 560px;
+}
+
+.sizing {
+    width: 300px;
+    height: 300px;
+    margin-left: 780px;
+    margin-top: 30px;
+}
+
+.def {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Rubik Vinyl', cursive;
+    color: aliceblue;
+    font-size: 26px;
+    width: fit-content;
+    margin-left: 530px;
+}
+
+img {
+    --m:
+      radial-gradient(circle farthest-side at right,#000 99%,#0000) 
+        0 100%/46% 92% no-repeat,
+      radial-gradient(circle farthest-side at left ,#000 99%,#0000) 
+        100% 0/46% 92% no-repeat;
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale(.5);
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  img:hover {
+    -webkit-mask-position: 7.5% 50%,92.5% 50%;
+            mask-position: 7.5% 50%,92.5% 50%;
+    filter: grayscale(0);
+  }
+
+
+  h2::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h2:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h2::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #502900;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h2 {
+    position: relative;
+    font-size: 5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #201508;
+    color: #fff;
+    margin-top: 100px;
+}
